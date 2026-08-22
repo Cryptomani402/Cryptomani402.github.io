@@ -85,6 +85,22 @@
             text-align: center;
             margin-bottom: 0;
         }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .gallery-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+            transition: transform 0.2s;
+        }
+        .gallery-grid img:hover {
+            transform: scale(1.03);
+        }
         footer {
             text-align: center;
             margin-top: 40px;
@@ -163,6 +179,17 @@
                 <ul>
                     <li>Moderated daily discussions and created content that grew community engagement during early growth.</li>
                 </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Proof of Work & Gallery</h2>
+            <p>Here are some snapshots showcasing community engagement, active management, and moderation activities:</p>
+            <div class="gallery-grid">
+                <img src="POW.1" alt="Proof of Work 1">
+                <img src="POW.5" alt="Proof of Work 2">
+                <img src="POW.7" alt="Proof of Work 3">
+                <img src="POW.11" alt="Proof of Work 4">
             </div>
         </section>
 
